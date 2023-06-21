@@ -1,4 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container{
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
@@ -9,7 +15,6 @@
 
 .header {
   background-color: lightcoral;
-  height: 200px;
   grid-area: header;
 }
 
@@ -20,6 +25,5 @@
 
 .main-content {
   background-color: lightgreen;
-  height: 200px;
   grid-area: main-content;
 }
