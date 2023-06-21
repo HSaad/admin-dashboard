@@ -1,3 +1,25 @@
-h1 {
-  color: red;
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar main-content";
+}
+
+.header {
+  background-color: lightcoral;
+  height: 200px;
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: lightblue;
+  grid-area: sidebar;
+}
+
+.main-content {
+  background-color: lightgreen;
+  height: 200px;
+  grid-area: main-content;
 }
