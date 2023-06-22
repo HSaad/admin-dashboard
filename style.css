@@ -1,6 +1,17 @@
+:root {
+  --primary-color: #1992d4;
+  --secondary-color: #e3b030;
+}
+
 * {
   margin: 0;
   padding: 0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a {
+  text-decoration: none;
 }
 
 .container{
@@ -14,16 +25,74 @@
 }
 
 .header {
-  background-color: lightcoral;
+  background-color: white;
   grid-area: header;
+  box-shadow: -1px 3px 20px -9px rgba(0,0,0,0.66);
+  z-index: 2;
 }
 
 .sidebar {
-  background-color: lightblue;
+  background-color: var(--primary-color);
   grid-area: sidebar;
+
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
+.nav a, .settings a, .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  gap: 15px;
+  font-weight: 700;
+}
+
+.logo svg {
+  width: 40px;
+}
+
+
 .main-content {
-  background-color: lightgreen;
+  background-color: #e2e8f0;
   grid-area: main-content;
+}
+
+svg {
+  width: 20px;
+}
+
+.image-cropper {
+  border-radius: 25px;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.header img {
+  height: 45px;
+  width: 43px;
+}
+
+.profile .image-cropper {
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+}
+
+.profile img {
+  height: 80px;
+  width: 80px;
 }
