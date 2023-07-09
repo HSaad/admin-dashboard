@@ -166,6 +166,10 @@ button {
   background-color: red;
 }
 
+.card {
+  background-color: white;
+}
+
 .announcements {
   grid-area: announcements;
   background-color: blue;
