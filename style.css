@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+svg {
+  width: 23px;
+}
+
 .container{
   height: 100vh;
   display: grid;
@@ -143,11 +147,31 @@ button {
   width: 40px;
 }
 
+/* Main Content CSS styles */
+
 .main-content {
   background-color: #e2e8f0;
   grid-area: main-content;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "projects announcements"
+    "projects trending";
 }
 
-svg {
-  width: 23px;
+.projects {
+  grid-area: projects;
+  background-color: red;
+}
+
+.announcements {
+  grid-area: announcements;
+  background-color: blue;
+}
+
+.trending {
+  grid-area: trending;
+  background-color: yellow;
 }
