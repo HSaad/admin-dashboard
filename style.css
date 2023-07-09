@@ -1,6 +1,7 @@
 :root {
   --primary-color: #1992d4;
   --secondary-color: #e3b030;
+  --background-color: #e2e8f0;
 }
 
 * {
@@ -24,12 +25,90 @@ a {
     "sidebar main-content";
 }
 
+/* Header CSS styles */
+
 .header {
   background-color: white;
   grid-area: header;
   box-shadow: -1px 3px 20px -9px rgba(0,0,0,0.66);
   z-index: 2;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 10px;
+  padding: 10px 50px;
 }
+
+.header div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: end;
+}
+
+input[type="search"]{
+  border-radius: 20px;
+  height: fit-content;
+  padding: 7px;
+  border: none;
+  background-color: var(--background-color);
+  flex: 1;
+}
+
+button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  /* font-size: 0.9rem; */
+  border: none;
+}
+
+.image-cropper {
+  border-radius: 25px;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.header img {
+  height: 45px;
+  width: 43px;
+}
+
+.profile {
+  justify-self: start;
+}
+
+.profile .image-cropper {
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+}
+
+.profile img {
+  height: 80px;
+  width: 80px;
+}
+
+.profile .greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+
+.greeting :first-child {
+  font-size: 0.8rem;
+}
+
+.greeting :last-child {
+  font-size: 1.25rem;
+}
+
+/* Sidebar CSS styles */
 
 .sidebar {
   background-color: var(--primary-color);
@@ -64,35 +143,11 @@ a {
   width: 40px;
 }
 
-
 .main-content {
   background-color: #e2e8f0;
   grid-area: main-content;
 }
 
 svg {
-  width: 20px;
-}
-
-.image-cropper {
-  border-radius: 25px;
-  overflow: hidden;
-  height: 40px;
-  width: 40px;
-}
-
-.header img {
-  height: 45px;
-  width: 43px;
-}
-
-.profile .image-cropper {
-  height: 75px;
-  width: 75px;
-  border-radius: 50px;
-}
-
-.profile img {
-  height: 80px;
-  width: 80px;
+  width: 23px;
 }
