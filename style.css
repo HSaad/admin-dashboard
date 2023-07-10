@@ -219,12 +219,35 @@ h1 {
   font-size: 0.9rem;
 }
 
+/* Main Content (Announcements) CSS styles */
+
 .announcements {
   grid-area: announcements;
-  background-color: blue;
+  padding: 10px 20px 10px 0;
+}
+
+.announcements .card {
+  border: none;
+  width: auto;
+  height: fit-content;
+}
+
+h2 {
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+p {
+  font-size: 0.7rem;
+  color: var(--project-font-color);
+}
+
+hr {
+  margin: 15px 0;
 }
 
 .trending {
   grid-area: trending;
+  padding: 10px 20px 10px 0;
   background-color: yellow;
 }
