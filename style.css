@@ -152,8 +152,10 @@ button {
 .main-content {
   background-color: #e2e8f0;
   grid-area: main-content;
+  padding: 10px;
 
   display: grid;
+  gap: 20px;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
@@ -163,11 +165,52 @@ button {
 
 .projects {
   grid-area: projects;
-  background-color: red;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   background-color: white;
+  border-left: var(--secondary-color) solid 8px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: -1px 3px 20px -9px rgba(0,0,0,0.66);
+  height: 150px;
+  min-height: fit-content;
+}
+
+.buttons {
+  align-self:  flex-end;
+}
+
+.buttons svg {
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.content {
+  color: darkgray;
+  font-size: 0.9rem;
 }
 
 .announcements {
