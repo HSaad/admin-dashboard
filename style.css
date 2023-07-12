@@ -72,10 +72,12 @@ button {
 }
 
 .image-cropper {
-  border-radius: 25px;
+  border-radius: 50%;
   overflow: hidden;
   height: 40px;
   width: 40px;
+  min-height: 40px;
+  min-width: 40px;
 }
 
 .header img, .trending img {
@@ -257,10 +259,15 @@ hr {
   border: none;
   width: auto;
   height: fit-content;
+  padding: 15px 25px 25px 30px;
 }
 
 .trending .card > div {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
+}
+
+.trending .card div, .trending .card p {
+  font-size: 0.8rem;
 }
